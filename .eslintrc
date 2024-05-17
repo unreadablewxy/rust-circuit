@@ -1,0 +1,31 @@
+{
+    "root": true,
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+        "@typescript-eslint"
+    ],
+    "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/eslint-recommended",
+        "plugin:@typescript-eslint/recommended"
+    ],
+    "rules": {
+        // dumb rule for people with uncontrolled ADHD or too lazy to read
+        "no-fallthrough": "off",
+
+        // cripplingly dumb rule by people that never mastered recursion to iteration conversion
+        "no-constant-condition": "off",
+
+        // no, this project was never meant to run on any version of IE
+        "no-ex-assign": "off",
+
+        // dumb rule for gullible idiots that trusts implicit conversions
+        "@typescript-eslint/no-inferrable-types": "off",
+
+        // dumb rule by people that prefers to keep around easily unrolled recursion
+        "@typescript-eslint/no-this-alias": "off",
+
+        // dumb rule made unbearable by over conservative type refining
+        "@typescript-eslint/no-non-null-assertion": "off"
+    }
+}

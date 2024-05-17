@@ -1,0 +1,44 @@
+{
+  "name": "rust-circuit",
+  "version": "1.0.0",
+  "description": "Rust circuit markdown compiler",
+  "main": "dist/index.js",
+  "scripts": {
+    "prepare": "npm run build && npm run generate-dts",
+    "watch": "webpack --mode=development --watch",
+    "build": "webpack --mode=production",
+    "generate-dts": "tsc --declaration --emitDeclarationOnly",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/unreadablewxy/rust-circuit.git"
+  },
+  "keywords": [
+    "rust-game"
+  ],
+  "author": "wxy@unreadableco.de",
+  "license": "GPL-2.0",
+  "bugs": {
+    "url": "https://github.com/unreadablewxy/rust-circuit/issues"
+  },
+  "homepage": "https://github.com/unreadablewxy/rust-circuit#readme",
+  "devDependencies": {
+    "@babel/core": "^7.23.0",
+    "@babel/plugin-transform-typescript": "^7.24.5",
+    "@babel/preset-env": "^7.22.20",
+    "@babel/preset-typescript": "^7.23.0",
+    "@typescript-eslint/eslint-plugin": "^6.7.5",
+    "@typescript-eslint/parser": "^6.7.5",
+    "babel-loader": "^9.1.3",
+    "eslint": "^8.51.0",
+    "eslint-webpack-plugin": "^4.0.1",
+    "license-webpack-plugin": "^4.0.2",
+    "source-map-loader": "^4.0.1",
+    "terser-webpack-plugin": "^5.3.9",
+    "typescript": "^5.2.2",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4",
+    "webpack-config-builder": "github:unreadable-code/webpack-config-builder"
+  }
+}

@@ -1,0 +1,19 @@
+{
+    "presets": [
+        "@babel/env",
+        [
+            "@babel/preset-typescript", {
+                "allowNamespaces": true,
+                "allowDeclareFields": true
+            }
+        ]
+    ],
+    "plugins": [
+        [
+            "@babel/plugin-transform-typescript", {
+                "allowDeclareFields": true
+            }
+        ],
+        "@babel/plugin-transform-object-rest-spread"
+    ]
+}
